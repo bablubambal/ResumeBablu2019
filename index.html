@@ -27,6 +27,11 @@
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
+	<!-- Script to dynamically type character
+===================================================================-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+  
 
    <!-- Favicons
 	================================================== -->
@@ -70,7 +75,7 @@
 
       <div class="row banner">
          <div class="banner-text " >
-            <h1 class="responsive-headline animated shake ">I'm Bablu</h1>
+            <h1 class="responsive-headline animated shake ">I'm <span id="typed"></span><span class="typed-cursor"></span></h1>
             <h3 class="animated flip" >I'm a Hyderabad based <span>progammer</span>, <span>student</span> and <span>Learner</span> creating awesome and
             effective projects of web and android to simplify other life and as a fun activity. Let's <a class="smoothscroll" href="#about">start scrolling</a>
             and learn more <a class="smoothscroll btn btn-info" href="#about">about me</a>.</h3>
@@ -514,6 +519,23 @@
 
    <!-- Java Script
    ================================================== -->
+	<script type="text/javascript">
+   //Simple code to dynamically type
+    window.onload = function(){
+     console.log("loaded")
+        var typed = new Typed('#typed', {
+            strings: ["","Bablu", "Programmer","Web Developer", "Youtuber", "Blogger"],
+            backSpeed: 45,
+            smartBackspace: true,
+            backDelay: 1200,
+            startDelay: 1000,
+            typeSpeed: 100,
+            loop: true,
+        });
+}
+
+</script>
+	
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
